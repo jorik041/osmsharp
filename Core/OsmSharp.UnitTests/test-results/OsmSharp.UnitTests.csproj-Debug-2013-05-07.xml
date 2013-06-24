@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <UnitTestResult>
+      <TestDate>2013-05-07T19:04:14</TestDate>
+      <Passed>0</Passed>
+      <Errors>0</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>The type initializer for 'Mono.Unix.Native.Stdlib' threw an exception.</Message>
+      <StackTrace>
+Server stack trace: 
+   at Mono.Unix.Native.Stdlib.malloc(UInt64 size)
+   at Mono.Unix.UnixMarshal.StringToHeap(String s, Int32 index, Int32 count, Encoding encoding)
+   at Mono.Unix.Catalog.GetString(String s)
+   at MonoDevelop.Core.GettextCatalog.GetString(String phrase)
+   at MonoDevelop.NUnit.External.EventListenerWrapper.GetLocalTestResult(TestResult t)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.RunUnitTest(UnitTest test, String suiteName, String pathName, String testName, TestContext testContext)
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.OnRun(TestContext testContext)
+   at MonoDevelop.NUnit.NUnitProjectTestSuite.OnRun(TestContext testContext)
+   at MonoDevelop.NUnit.UnitTest.Run(TestContext testContext)</StackTrace>
+    </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2013-05-07T19:05:27</TestDate>
+      <Passed>189</Passed>
+      <Errors>3</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+  </Results>
+  <Tests>
+    <TestRecord Name="OsmSharp">
+      <Results>
+        <UnitTestResult>
+          <TestDate>2013-05-07T19:05:27</TestDate>
+          <Passed>189</Passed>
+          <Errors>3</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+      </Results>
+      <Tests>
+        <TestRecord Name="UnitTests">
+          <Results>
+            <UnitTestResult>
+              <TestDate>2013-05-07T19:05:27</TestDate>
+              <Passed>79</Passed>
+              <Errors>3</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+              <ConsoleOutput />
+              <ConsoleError />
+            </UnitTestResult>
+          </Results>
+          <Tests>
+            <TestRecord Name="Serialization">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2013-05-07T19:05:27</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>3</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>One or more child tests had errors</Message>
+                </UnitTestResult>
+              </Results>
+              <Tests>
+                <TestRecord Name="RoutingSerializationTests">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2013-05-07T19:05:27</TestDate>
+                      <Passed>0</Passed>
+                      <Errors>3</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>One or more child tests had errors</Message>
+                    </UnitTestResult>
+                  </Results>
+                  <Tests>
+                    <TestRecord Name="RoutingSerializationDataSourceTest">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2013-05-07T19:05:27</TestDate>
+                          <Passed>0</Passed>
+                          <Errors>1</Errors>
+                          <Failures>0</Failures>
+                          <Inconclusive>0</Inconclusive>
+                          <NotRunnable>0</NotRunnable>
+                          <Skipped>0</Skipped>
+                          <Ignored>0</Ignored>
+                          <Time />
+                          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+                          <StackTrace>   at OsmSharp.Osm.OsmTagsIndex.OsmTags.GetHashCode() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Osm\Tags\OsmTagsIndex.cs:line 197
+   at System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at OsmSharp.Tools.Collections.ObjectTable`1.BuildReverseIndex() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 115
+   at OsmSharp.Tools.Collections.ObjectTable`1..ctor(Boolean reverse_index, Int32 init_capacity, Type[] strings) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 72
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.SerializableObjectTable`1.op_Implicit(SerializableObjectTable`1 value) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 497
+   at proto_46(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_41(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_42(Object , ProtoReader )
+   at ProtoBuf.Meta.TypeModel.DeserializeCore(ProtoReader reader, Type type, Object value, Boolean noAutoCreate) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 679
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type, SerializationContext context) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 581
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 560
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.DoDeserialize(RoutingSerializerStream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 239
+   at OsmSharp.Routing.Graph.Serialization.RoutingSerializer.Deserialize(Stream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\RoutingSerializer.cs:line 158
+   at OsmSharp.UnitTests.Serialization.RoutingSerializationTests.RoutingSerializationDataSourceTest() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.UnitTests\Routing\Serialization\RoutingSerializationTests.cs:line 91</StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                    <TestRecord Name="RoutingSerializationRoutingComparisonTest">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2013-05-07T19:05:27</TestDate>
+                          <Passed>0</Passed>
+                          <Errors>1</Errors>
+                          <Failures>0</Failures>
+                          <Inconclusive>0</Inconclusive>
+                          <NotRunnable>0</NotRunnable>
+                          <Skipped>0</Skipped>
+                          <Ignored>0</Ignored>
+                          <Time />
+                          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+                          <StackTrace>   at OsmSharp.Osm.OsmTagsIndex.OsmTags.GetHashCode() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Osm\Tags\OsmTagsIndex.cs:line 197
+   at System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at OsmSharp.Tools.Collections.ObjectTable`1.BuildReverseIndex() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 115
+   at OsmSharp.Tools.Collections.ObjectTable`1..ctor(Boolean reverse_index, Int32 init_capacity, Type[] strings) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 72
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.SerializableObjectTable`1.op_Implicit(SerializableObjectTable`1 value) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 497
+   at proto_74(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_69(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_70(Object , ProtoReader )
+   at ProtoBuf.Meta.TypeModel.DeserializeCore(ProtoReader reader, Type type, Object value, Boolean noAutoCreate) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 679
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type, SerializationContext context) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 581
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 560
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.DoDeserialize(RoutingSerializerStream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 239
+   at OsmSharp.Routing.Graph.Serialization.RoutingSerializer.Deserialize(Stream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\RoutingSerializer.cs:line 158
+   at OsmSharp.UnitTests.Serialization.RoutingSerializationTests.RoutingSerializationRoutingComparisonTest() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.UnitTests\Routing\Serialization\RoutingSerializationTests.cs:line 237</StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                    <TestRecord Name="RoutingSerializationRoutingTest">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2013-05-07T19:05:27</TestDate>
+                          <Passed>0</Passed>
+                          <Errors>1</Errors>
+                          <Failures>0</Failures>
+                          <Inconclusive>0</Inconclusive>
+                          <NotRunnable>0</NotRunnable>
+                          <Skipped>0</Skipped>
+                          <Ignored>0</Ignored>
+                          <Time />
+                          <Message>System.NullReferenceException : Object reference not set to an instance of an object.</Message>
+                          <StackTrace>   at OsmSharp.Osm.OsmTagsIndex.OsmTags.GetHashCode() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Osm\Tags\OsmTagsIndex.cs:line 197
+   at System.Collections.Generic.ObjectEqualityComparer`1.GetHashCode(T obj)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at OsmSharp.Tools.Collections.ObjectTable`1.BuildReverseIndex() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 115
+   at OsmSharp.Tools.Collections.ObjectTable`1..ctor(Boolean reverse_index, Int32 init_capacity, Type[] strings) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Tools\Collections\ObjectTable.cs:line 72
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.SerializableObjectTable`1.op_Implicit(SerializableObjectTable`1 value) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 497
+   at proto_102(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_97(Object , ProtoReader )
+   at ProtoBuf.ProtoReader.ReadTypedObject(Object value, Int32 key, ProtoReader reader, Type type) in c:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 556
+   at proto_98(Object , ProtoReader )
+   at ProtoBuf.Meta.TypeModel.DeserializeCore(ProtoReader reader, Type type, Object value, Boolean noAutoCreate) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 679
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type, SerializationContext context) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 581
+   at ProtoBuf.Meta.TypeModel.Deserialize(Stream source, Object value, Type type) in c:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 560
+   at OsmSharp.Routing.Graph.Serialization.v1.V1RoutingSerializer.DoDeserialize(RoutingSerializerStream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\v1\V1RoutingSerializer.cs:line 239
+   at OsmSharp.Routing.Graph.Serialization.RoutingSerializer.Deserialize(Stream stream, Boolean lazy) in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.Routing\Graph\Serialization\RoutingSerializer.cs:line 158
+   at OsmSharp.UnitTests.Serialization.RoutingSerializationTests.RoutingSerializationRoutingTest() in c:\PRIVATE\Projects\OsmSharp\git\osmsharp\Core\OsmSharp.UnitTests\Routing\Serialization\RoutingSerializationTests.cs:line 139</StackTrace>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                  </Tests>
+                </TestRecord>
+              </Tests>
+            </TestRecord>
+            <TestRecord Name="GpxXmlTest">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2013-05-07T19:10:46</TestDate>
+                  <Passed>0</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>The type initializer for 'Mono.Unix.Native.Stdlib' threw an exception.</Message>
+                  <StackTrace>
+Server stack trace: 
+   at Mono.Unix.Native.Stdlib.malloc(UInt64 size)
+   at Mono.Unix.UnixMarshal.StringToHeap(String s, Int32 index, Int32 count, Encoding encoding)
+   at Mono.Unix.Catalog.GetString(String s)
+   at MonoDevelop.Core.GettextCatalog.GetString(String phrase)
+   at MonoDevelop.NUnit.External.EventListenerWrapper.GetLocalTestResult(TestResult t)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.RunUnitTest(UnitTest test, String suiteName, String pathName, String testName, TestContext testContext)</StackTrace>
+                </UnitTestResult>
+              </Results>
+              <Tests>
+                <TestRecord Name="GpxReadv1_1Test">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2013-05-07T19:10:46</TestDate>
+                      <Passed>0</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>The type initializer for 'Mono.Unix.Native.Stdlib' threw an exception.</Message>
+                      <StackTrace>
+Server stack trace: 
+   at Mono.Unix.Native.Stdlib.malloc(UInt64 size)
+   at Mono.Unix.UnixMarshal.StringToHeap(String s, Int32 index, Int32 count, Encoding encoding)
+   at Mono.Unix.Catalog.GetString(String s)
+   at MonoDevelop.Core.GettextCatalog.GetString(String phrase)
+   at MonoDevelop.NUnit.External.EventListenerWrapper.GetLocalTestResult(TestResult t)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.RunUnitTest(UnitTest test, String suiteName, String pathName, String testName, TestContext testContext)</StackTrace>
+                    </UnitTestResult>
+                  </Results>
+                </TestRecord>
+                <TestRecord Name="GpxReadv1_0Test">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2013-05-07T19:10:56</TestDate>
+                      <Passed>0</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>The type initializer for 'Mono.Unix.Native.Stdlib' threw an exception.</Message>
+                      <StackTrace>
+Server stack trace: 
+   at Mono.Unix.Native.Stdlib.malloc(UInt64 size)
+   at Mono.Unix.UnixMarshal.StringToHeap(String s, Int32 index, Int32 count, Encoding encoding)
+   at Mono.Unix.Catalog.GetString(String s)
+   at MonoDevelop.Core.GettextCatalog.GetString(String phrase)
+   at MonoDevelop.NUnit.External.EventListenerWrapper.GetLocalTestResult(TestResult t)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.RunUnitTest(UnitTest test, String suiteName, String pathName, String testName, TestContext testContext)
+   at MonoDevelop.NUnit.NUnitTestCase.OnRun(TestContext testContext)
+   at MonoDevelop.NUnit.UnitTest.Run(TestContext testContext)</StackTrace>
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2013-05-07T19:11:17</TestDate>
+                      <Passed>0</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>The type initializer for 'Mono.Unix.Native.Stdlib' threw an exception.</Message>
+                      <StackTrace>
+Server stack trace: 
+   at Mono.Unix.Native.Stdlib.malloc(UInt64 size)
+   at Mono.Unix.UnixMarshal.StringToHeap(String s, Int32 index, Int32 count, Encoding encoding)
+   at Mono.Unix.Catalog.GetString(String s)
+   at MonoDevelop.Core.GettextCatalog.GetString(String phrase)
+   at MonoDevelop.NUnit.External.EventListenerWrapper.GetLocalTestResult(TestResult t)
+   at MonoDevelop.NUnit.External.ExternalTestRunner.Run(IRemoteEventListener listener, ITestFilter filter, String path, String suiteName, List`1 supportAssemblies, String testRunnerType, String testRunnerAssembly)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.SyncProcessMessage(IMessage msg)
+
+Exception rethrown at [0]: 
+   at MonoDevelop.NUnit.NUnitAssemblyTestSuite.RunUnitTest(UnitTest test, String suiteName, String pathName, String testName, TestContext testContext)
+   at MonoDevelop.NUnit.NUnitTestCase.OnRun(TestContext testContext)
+   at MonoDevelop.NUnit.UnitTest.Run(TestContext testContext)</StackTrace>
+                    </UnitTestResult>
+                  </Results>
+                </TestRecord>
+              </Tests>
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>
